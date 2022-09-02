@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+@media (orientation: landscape) {
+    .container {
+        background-color: #ffffff;
+        border: 1px solid #005dfe;
+        border-radius: 8px;
+        width: 568px;
+        height: 320px;
+        display: flex;
+        padding: 50px 0;
+        flex-direction: row;
+        align-items: center;
+    }
+    .settings{
+        margin-left: 110px;
+    }
+    .circle {
+        margin-left: 80px;
+    }
+}
+@media (orientation: portrait) {
+    .container {
+        background-color: #ffffff;
+        border: 1px solid #005dfe;
+        border-radius: 8px;
+        width: 320px;
+        height: 568px;
+        display: flex;
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .settings{
+        margin-top: 110px;
+    }
+
+    .circle {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/*.container {*/
+/*    background-color: #ffffff;*/
+/*    border: 1px solid #005dfe;*/
+/*    border-radius: 8px;*/
+/*    width: 568px;*/
+/*    height: 320px;*/
+/*    display: flex;*/
+/*    padding: 50px 0;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.settings{*/
+/*    margin-left: 110px;*/
+/*}*/
+
+.circle {
+    opacity: 1;
+    position: relative;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    -webkit-transition: .25s;
+    display: flex;
+    transform: rotate(0deg);
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(#005dfe 3.6deg, #edf2f5 0deg);
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    height: 116px;
+    width: 116px;
+    background-color: white;
+    border-radius: 50%;
+}
+#progress {
+    text-align: center;
+    height:29px;
+    font-size: 16px;
+    width:45px;
+    border: 1.7px solid black;
+    border-radius:19px;
+}
+.progressText{
+    margin-left: 20px;
+}
+.progressValue{
+    display: flex;
+    align-items: center;
+}
+.radio{
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+}
+.animateText{
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+*,:before,:after {
+    box-sizing: border-box;
+    outline:none;
+}
+
+.toggles {
+    width:40px;
+    text-align:center;
+}
+
+.ios-toggle,.ios-toggle:active {
+    opacity:0;
+}
+
+.checkbox-label {
+    display:block;
+    position:relative;
+    line-height:16px;
+    width:100%;
+    height:25px;
+    -webkit-transition: .25s ease-in-out;
+    border-radius:18px;
+    background: #dee5ef;
+    cursor:pointer;
+}
+
+.checkbox-label:before {
+    content:'';
+    display:block;
+    position:absolute;
+    z-index:1;
+    height:23px;
+    width:23px;
+    border-radius:100%;
+    right:auto;
+    -webkit-transition: .25s ease-in-out;
+    background:white;
+    box-shadow:0 3px 3px rgba(0,0,0,.2),0 0 0 2px #dee5ef;
+}
+
+
+
+.ios-toggle:checked + .checkbox-label {
+    box-shadow:inset 0 0 0 20px rgba(19,191,17,1),0 0 0 2px rgba(19,191,17,1);
+}
+
+.ios-toggle:checked + .checkbox-label:before {
+    left:calc(100% - 25px);
+    box-shadow:0 0 0 2px transparent,0 3px 3px rgba(0,0,0,.3);
+}
+
+#checkbox1 + .checkbox-label {
+    box-shadow:inset 0 0 0 0px #005dfe,0 0 0 2px #dee5ef;
+}
+
+#checkbox1:checked + .checkbox-label {
+    box-shadow:inset 0 0 0 20px #005dfe,0 0 0 2px #005dfe;
+}
+
+#checkbox2 + .checkbox-label {
+    box-shadow:inset 0 0 0 0px #005dfe,0 0 0 2px #dee5ef;
+}
+
+#checkbox2:checked + .checkbox-label {
+    box-shadow:inset 0 0 0 20px #005dfe,0 0 0 2px #005dfe;
+}

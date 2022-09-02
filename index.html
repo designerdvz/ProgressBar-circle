@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress-bar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="circle">
+    </div>
+    <div class="settings">
+        <div class="progressValue">
+            <input type="text" oninput="valid()" id="progress">
+            <div class="progressText" >Value</div>
+        </div>
+        <div class="radio">
+            <div class="toggles">
+                <input type="checkbox" name="checkbox1" onchange="isAnimate()" id="checkbox1" class="ios-toggle" />
+                <label for="checkbox1" class="checkbox-label"> </label>
+            </div>
+            <div class="animateText">Animate</div>
+        </div>
+        <div class="radio">
+            <div class="toggles">
+                <input type="checkbox" name="checkbox1" onchange="isHide()" id="checkbox2" class="ios-toggle"/>
+                <label for="checkbox2" class="checkbox-label" > </label>
+            </div>
+            <div class="animateText">Hide</div>
+        </div>
+
+    </div>
+</div>
+<script src="app.js" ></script>
+</body>
+</html>
