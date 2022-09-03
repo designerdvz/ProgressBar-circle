@@ -62,7 +62,7 @@ myInput.addEventListener("input", () => {
     }
 })
 
-myInput.addEventListener("blur", (event) => {
+myInput.addEventListener("input", (event) => {
     x = event.target.value
     let progressStart = 0,
         progressEnd = x,
