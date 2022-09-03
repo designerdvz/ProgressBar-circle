@@ -12,26 +12,26 @@
     </div>
     <div class="settings">
         <div class="progressValue">
-            <input type="text" oninput="valid()" id="progress">
-            <div class="progressText" >Value</div>
+            <input type="number" id="progress">
+            <div class="progressText">Value</div>
         </div>
         <div class="radio">
             <div class="toggles">
-                <input type="checkbox" name="checkbox1" onchange="isAnimate()" id="checkbox1" class="ios-toggle" />
-                <label for="checkbox1" class="checkbox-label"> </label>
+                <input type="checkbox" name="checkbox1" id="checkbox1" class="myToggle"/>
+                <label for="checkbox1" class="checkboxLabel"> </label>
             </div>
             <div class="animateText">Animate</div>
         </div>
         <div class="radio">
             <div class="toggles">
-                <input type="checkbox" name="checkbox1" onchange="isHide()" id="checkbox2" class="ios-toggle"/>
-                <label for="checkbox2" class="checkbox-label" > </label>
+                <input type="checkbox" name="checkbox1" id="checkbox2" class="myToggle"/>
+                <label for="checkbox2" class="checkboxLabel"> </label>
             </div>
             <div class="animateText">Hide</div>
         </div>
 
     </div>
 </div>
-<script src="app.js" ></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>

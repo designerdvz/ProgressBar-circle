@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-weight: bold;
 }
+
 @media (orientation: landscape) {
     .container {
         background-color: #ffffff;
@@ -17,13 +18,16 @@
         flex-direction: row;
         align-items: center;
     }
-    .settings{
+
+    .settings {
         margin-left: 110px;
     }
+
     .circle {
         margin-left: 80px;
     }
 }
+
 @media (orientation: portrait) {
     .container {
         background-color: #ffffff;
@@ -39,35 +43,26 @@
     .settings{
         margin-top: 110px;
     }
-
     .circle {
         margin-left: 0;
         margin-top: 30px;
     }
 }
+
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
+
 }
 
-/*.container {*/
-/*    background-color: #ffffff;*/
-/*    border: 1px solid #005dfe;*/
-/*    border-radius: 8px;*/
-/*    width: 568px;*/
-/*    height: 320px;*/
-/*    display: flex;*/
-/*    padding: 50px 0;*/
-/*    flex-direction: row;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.settings{*/
-/*    margin-left: 110px;*/
-/*}*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .circle {
     opacity: 1;
@@ -91,6 +86,7 @@ body {
     background-color: white;
     border-radius: 50%;
 }
+
 #progress {
     text-align: center;
     height:29px;
@@ -99,18 +95,22 @@ body {
     border: 1.7px solid black;
     border-radius:19px;
 }
+
 .progressText{
     margin-left: 20px;
 }
+
 .progressValue{
     display: flex;
     align-items: center;
 }
+
 .radio{
     padding-left: 4px;
     display: flex;
     align-items: center;
 }
+
 .animateText{
     padding-top: 25px;
     margin-left: 20px;
@@ -126,11 +126,11 @@ body {
     text-align:center;
 }
 
-.ios-toggle,.ios-toggle:active {
+.myToggle,.myToggle:active {
     opacity:0;
 }
 
-.checkbox-label {
+.checkboxLabel {
     display:block;
     position:relative;
     line-height:16px;
@@ -142,7 +142,7 @@ body {
     cursor:pointer;
 }
 
-.checkbox-label:before {
+.checkboxLabel:before {
     content:'';
     display:block;
     position:absolute;
@@ -156,29 +156,27 @@ body {
     box-shadow:0 3px 3px rgba(0,0,0,.2),0 0 0 2px #dee5ef;
 }
 
-
-
-.ios-toggle:checked + .checkbox-label {
+.myToggle:checked + .checkboxLabel {
     box-shadow:inset 0 0 0 20px rgba(19,191,17,1),0 0 0 2px rgba(19,191,17,1);
 }
 
-.ios-toggle:checked + .checkbox-label:before {
+.myToggle:checked + .checkboxLabel:before {
     left:calc(100% - 25px);
     box-shadow:0 0 0 2px transparent,0 3px 3px rgba(0,0,0,.3);
 }
 
-#checkbox1 + .checkbox-label {
+#checkbox1 + .checkboxLabel {
     box-shadow:inset 0 0 0 0px #005dfe,0 0 0 2px #dee5ef;
 }
 
-#checkbox1:checked + .checkbox-label {
+#checkbox1:checked + .checkboxLabel {
     box-shadow:inset 0 0 0 20px #005dfe,0 0 0 2px #005dfe;
 }
 
-#checkbox2 + .checkbox-label {
+#checkbox2 + .checkboxLabel {
     box-shadow:inset 0 0 0 0px #005dfe,0 0 0 2px #dee5ef;
 }
 
-#checkbox2:checked + .checkbox-label {
+#checkbox2:checked + .checkboxLabel {
     box-shadow:inset 0 0 0 20px #005dfe,0 0 0 2px #005dfe;
 }
